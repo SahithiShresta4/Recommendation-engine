@@ -23,9 +23,6 @@ Movie Recommendation Engine suggests top 10 movies based on the movie which user
   
 3. Install dependencies
 
-```bash
-  pip install -r requirements.txt
-```
 4. Run app.py
 
 5. The application will start running at the link displayed on the terminal. (http://127.0.0.1:5000)
