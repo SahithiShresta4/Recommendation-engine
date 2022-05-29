@@ -1,1 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Movie Recommender</title>
+    <style>
+      body
+      {
+        background-color: #14130b;
+      }
+      .movie
+      {
+        padding-top: 20px;
+      }
+      .heading
+      {
+        text-align: left;
+        width:70vw;
+        /* background-color: #9fafca; */
+        height:100px;
+        text-shadow: 1px 1px 1px #957dad,
+             1px 2px 1px #957dad,
+             1px 3px 1px #957dad,
+             1px 4px 1px #957dad,
+             1px 5px 1px #957dad,
+             1px 6px 1px #957dad,
+             1px 10px 5px rgba(16, 16, 16, 0.5),
+             1px 15px 10px rgba(16, 16, 16, 0.4),
+             1px 20px 30px rgba(16, 16, 16, 0.3),
+             1px 25px 50px rgba(16, 16, 16, 0.2);
+        padding:20px;
+        color:#fffdd0;
+      }
+      .heading2
+      {
+        margin:10px;
+        font-size:46px;
+        font-weight:bolder;
+        width:40vw;
+        margin-left: 10vw;
+      }
+      .animation
+      {
+        height:250px;
+        border-radius: 150px;
+        background-color: black;
+        margin-right: 0px;
+        margin-top: 5px;
+      }
+      .home-page-form
+      {
+        margin-top: 40px;
+        text-align: center;
+        color: #fffdd0;
+        padding:20px;
+      }
+      .movie-input
+      {
+        height:40px;
+        margin-top: 10px;
+      }
+      .button
+      {
+        background-color: #fffdd0;
+        color:black;
+      }
+      .Reccomend-heading
+      {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="d-flex flex-row movie">
+      <center><div class="heading"><h2 class="heading2">MOVIE<br>RECOMMENDATION<br>ENGINE</h2></div></center>
+      <video autoplay loop muted playsinline src="https://cdn.dribbble.com/users/2424410/screenshots/16919945/media/3b8d7e4b7f003e055d1e27e530546788.mp4" class="animation"></video>
+    </div>
+    <form class="home-page-form" action="{{ url_for('main') }}" method="POST">
+      <div class="Reccomend-heading"><h1>Recommend Movies Similar to</h1></div>
+      <center><input type="text" class="movie_input" style="height:40px;width:800px;padding:10px;" id="movie_name" name="movie_name" placeholder="Enter a full movie name" required /></center>
+      <br>
+      <div class="my_button" style="text-align:center;">
+        <button class="btn btn-primary button" type="submit" id="submission_button">Search</button>
+      </div>
+      <!-- <center><input type="submit" id="submission_button" value="Submit"/></center> -->
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

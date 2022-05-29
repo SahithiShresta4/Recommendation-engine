@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Showing Results</title>
+    <style>
+        body
+        {
+            background-color: black;
+            padding:20px;
+            color:white;
+        }
+        .recommendation-heading
+        {
+            text-align: center;
+            color:#fffdd0;
+            font-weight: bold;
+        }
+        .movie-name
+        {
+            color:white;
+        }
+        .movie_table
+        {
+            margin-top:50px;
+            align-items: center;
+        }
+        .column_1
+        {
+            width:100px;
+        }
+        td
+        {
+            height:50px;
+            text-align: center;
+        }
+        th
+        {
+            text-align: center;
+        }
+        .column_2
+        {
+            width:500px;
+        }
+        tr:hover
+        {
+            background-color: #fffdd0;
+            color:black;
+        }
+    </style>
+  </head>
+  <body>
+
+
+<div class="movie">
+
+
+        <div class="recommendation-heading"><h1>Recommendations</h1></div>
+        <p class="movie-name" style="font-size:24px;font-weight:bold;">Showing results for- {{ search_name }}</p>
+        <table class="movie_table" align="center">
+            <tr>
+                <th class="column_1">Movie No.</th>
+                <th class="column_2">Movie Title</th>
+                <th>IMDB Link</th>
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>1</td>
+                    <td>{{ movie_names[0] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[0] }}</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>{{ movie_names[1] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[1] }}</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>{{ movie_names[2] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[2] }}</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>{{ movie_names[3] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[3] }}</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>{{ movie_names[4] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[4] }}</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>{{ movie_names[5] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[5] }}</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>{{ movie_names[6] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[6] }}</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>{{ movie_names[7] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[7] }}</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>{{ movie_names[8] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[8] }}</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>{{ movie_names[9] }}</td>
+                    <td><a href={{ movie_date[0] }}>{{ movie_names[9] }}</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+   </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
