@@ -1,18 +1,10 @@
-<h1 align="center">Welcome to Recommendation-engine 👋</h1>
-<p>
-</p>
+MOVIE RECOMMENDATION ENGINE
 
->  A Movie Recommendation engine which recommends 10 movies based on the movie user has searched
+Recommendatio Engines are used in variety of areas such as movies,music,books,clothes. Recommendation Engines recommend things to the users based on users choices.
 
-## Author
+Movie Recommendation Engine suggests top 10 movies based on the movie which user has searched for.Uses KNN Algorithm to find the movies which are close to the particular movie.
 
-👤 **Siddam Shetty Sahithi Shresta**
-
-* Github: [@SahithiShresta4](https://github.com/SahithiShresta4)
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+Installation and Running-
+1.Clone this repository or Download zip file to your computer.
+2.Run app.py
+3.The application will start running at the link displayed on the terminal. (http://127.0.0.1:5000)
