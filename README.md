@@ -29,7 +29,8 @@ Movie Recommendation Engine suggests top 10 movies based on the movie which user
 4. Run app.py
 
 5. The application will start running at the link displayed on the terminal. (http://127.0.0.1:5000)
-  
+
+  <br />
 
 ### Tech Stack
 
@@ -40,13 +41,13 @@ Backend -- Python , Flask, Numpy , Pandas
 
 FrontEnd -- HTML,CSS
 ```
-
+<br />
 **DATA SET**
 
 ```bash
 https://www.kaggle.com/datasets/carolzhangdc/imdb-5000-movie-dataset
 ```
-  
+ <br />
 ###Algorithms and Learnings
 
 **KNN Algorithm**
