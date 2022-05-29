@@ -8,7 +8,7 @@ Movie Recommendation Engine suggests top 10 movies based on the movie which user
  <br />
 Installation and Running-<br />
   1. Clone this repository or Download zip file to your computer.</br>
-  2. Go to project directory
+  2. Go to project directory<br />
         cd Recommendation-engine
   2. Run app.py</br>
   3. The application will start running at the link displayed on the terminal. (http://127.0.0.1:5000)
