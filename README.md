@@ -1,4 +1,4 @@
-MOVIE RECOMMENDATION ENGINE
+**MOVIE RECOMMENDATION ENGINE**
 
 Recommendatio Engines are used in variety of areas such as movies,music,books,clothes. Recommendation Engines recommend things to the users based on users choices.
 
