@@ -14,7 +14,6 @@ class KNearestNeighbours:
         self.counts = list()
         self.category_assigned = None
 
-    @staticmethod
     def dist(p1, p2):
         #returns the Euclidan distance among them
         return np.linalg.norm(np.array(p1) - np.array(p2))
